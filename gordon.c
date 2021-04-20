@@ -67,7 +67,7 @@ fill (gpointer  user_data)
   gtk_widget_get_allocation (widgets->progress_bar, alloc);
   
   gtk_widget_set_margin_start(widgets->progress_image,
-                          alloc->width*fraction);
+                                        alloc->width);
   g_free(alloc);
 
   gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR(widgets->progress_bar),
